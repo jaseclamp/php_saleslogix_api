@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Refractic_ExportQuotes>
+            <version>
+                0.1.0
+            </version>
+        </Refractic_ExportQuotes>
+    </modules>
+	<global>
+		<models>
+			<exportquotes>
+				<class>Refractic_ExportQuotes_Model</class>
+			</exportquotes>
+		</models>
+	</global>
+	<crontab>
+        <jobs>
+            <refractic_exportquotes_export>
+                <schedule>
+                    <cron_expr>*/15 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>exportquotes/observer::exportNew</model>
+                </run>
+            </refractic_exportquotes_export>
+        </jobs>
+    </crontab>
+</config>

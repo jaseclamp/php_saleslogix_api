@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Refractic_ExportQuotes>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Refractic_ExportQuotes>
+     </modules>
+</config>
