@@ -1,6 +1,6 @@
 <?php
 
-class Madison_ExportQuotes_Model_Html2text
+class Refractic_ExportQuotes_Model_Html2text
 {
 /******************************************************************************
  * Copyright (c) 2010 Jevon Wright and others.
